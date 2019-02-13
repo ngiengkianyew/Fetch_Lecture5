@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>{{message}}</h2>
+      Enter message <input v-model="message" /> <br />
+      Enter emoticon <input v-model="emoticon" /><br />
+      Letter to replace <input v-model="letter" /><br />
+      <button @click="runParallel()">Translate</button>
+      <button @click="reset()">Reset</button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
